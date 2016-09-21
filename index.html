@@ -15,7 +15,9 @@
                 <a href="#">Forum</a>
                 <a href="#">Contato</a>
                 <a href="#">Ajuda</a>
-                <span class="flag">Minhas Ofertas</span>
+                <div class="flag">
+                    <a href="#">Minhas Ofertas</a>
+                </div>
                 <div class="ola">
                     <span>Ola!</span>
                     <a href="#">Entrar</a>
@@ -24,22 +26,41 @@
                 </div>
             </nav>
         </header>
-        <div class="content">
-            <form action="#" >
+        <div class="wrapper">
+            <div class="content">
                 <ul>
                     <li class="cadastre">Cadastre-se</li>
                     <li><a href="http://facebook.com"><img src="img/img4.png" alt=""></a></li>
                     <li class="ou">OU</li>
-                    <li><input type="text" name="firstname" id="firstname" placeholder="First Name"></li>
-                    <li><input type="text" name="lastname" id="lastname" placeholder="Last Name"></li>
-                    <li><input type="email" name="emailaddress" id="emailaddress" placeholder="Email Address"></li>
-                    <li><input type="password" name="password" id="password" placeholder="Choose Password"></li>
-                    <li><input type="password" name="passwordconfirm" id="passwordconfirm" placeholder="Password Confirm"></li>
-                    <li class="chekbox"><input type="checkbox" name="checkbox" id="checkbox">Send me Youbike updates and tips</li>
-                    <li><input class="submit" type="submit" value="Create my Account"></li>
-                    <li class="footer">By clicking the button above, you agree to the Terms of Service Xiew our Privacy Policy.</li>
                 </ul>
-            </form>
+                <form action="#" >
+                    <div class="reg-form">
+                        <p>
+                            <input type="text" name="firstname" id="firstname" required placeholder="First Name">
+                        </p>
+                        <p>
+                            <input type="text" name="lastname" id="lastname" required placeholder="Last Name">
+                        </p>
+                        <p>
+                            <input type="email" name="emailaddress" id="emailaddress" required placeholder="Email Address">
+                        </p>
+                        <p>
+                            <input type="password" name="password" id="password" required placeholder="Choose Password">
+                        </p>
+                        <p>
+                            <input type="password" name="passwordconfirm" id="passwordconfirm" required placeholder="Password Confirm">
+                        </p>
+                    </div>
+                    <p>
+                        <label class="chekbox"><input type="checkbox" name="checkbox" id="checkbox">
+                        Send me Youbike updates and tips</label>
+                    </p>
+                    <p>
+                        <input class="submit" type="submit" value="Create my Account">
+                    </p>
+                </form>
+                <footer>By clicking the button above, you agree to the Terms of Service Xiew our Privacy Policy.</footer>
+            </div>
         </div>
     </div>
 </body>

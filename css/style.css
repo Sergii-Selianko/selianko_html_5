@@ -7,6 +7,7 @@
 }
 
 body {
+    color: #fff;
     width: 1215px;
     margin: 0 auto;
     background-color: #fff;
@@ -17,47 +18,22 @@ body {
 /* ########## HEADER ########## */
 
 .menu {
-    color: #fff;
-    padding-right: 20px;
+    padding-right: 22px;
     background-color: #085393;
     background-image: url(../img/img5.png);
     background-repeat: repeat-x;
-    line-height: 35px;
+    line-height: 36px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
     align-items: baseline;
 }
 
-
 .menu a {
     color: #5aafe7;
     padding: 0 15px;
-    display: block;
     text-decoration: none;
     box-sizing: border-box;
-}
-
-.ola {
-    display: flex;
-    padding: 0 11px 0 15px;
-    background: linear-gradient(#50afdc, #2e7ac4);
-    border-radius: 1px;
-}
-.ola a {
-    color: #fff;
-    padding: 0 6px;
-    text-decoration: underline;
-}
-
-.flag {
-    margin-left: 5px;
-    padding: 0 13px 0 50px;
-    line-height: 30px;
-    border-left: 1px solid #56a2dc;
-    background-image: url(../img/img3.png);
-    background-repeat: no-repeat;
-    background-position: 15px 4px;
 }
 
 .menu a:hover {
@@ -65,13 +41,47 @@ body {
     background-color: #4eabda;
 }
 
+.ola {
+    padding: 0 15px;
+    line-height: 34px;
+    background: linear-gradient(#50afdc, #2e7ac4);
+    border: 1px solid #51b1dc;
+    border-radius: 1px;
+}
+
+.ola a {
+    color: #fff;
+    padding: 0 3px;
+    text-decoration: underline;
+}
+
 .ola a:hover {
+    background: none;
+    text-decoration: none;
+}
+
+.flag {
+    margin-left: 8px;
+    padding: 0 5px 0 40px;
+    line-height: 30px;
+    border-left: 1px solid #56a2dc;
+    background-image: url(../img/img3.png);
+    background-repeat: no-repeat;
+    background-position: 18px 4px;
+}
+
+.flag a {
+    color: #fff;
+}
+
+.flag a:hover {
+    text-decoration: underline;
     background: none;
 }
 
 /* ########## CONTENT #########*/
 
-.content {
+.wrapper {
     height: 1028px;
     background-image: url(../img/img1.png);
     display: flex;
@@ -79,43 +89,43 @@ body {
     align-items: center;
 }
 
+.content {
+    width: 560px;
+    height: 613px;
+    text-align: center;
+    background: rgba( 0, 0, 0, 0.63);
+}
+
 .cadastre {
+    padding: 20px 0;
     font-size: 24px;
     font-weight: bold;
-    line-height: 46px;
     border-bottom: 2px solid #c1cab7;
 }
 
-.content img {
-    margin-top: 24px;
-}
-
-.content ul {
-    width: 560px;
-    height: 610px;
-    text-align: center;
-    background: rgba( 0, 0, 0, 0.7);
-}
-
-.content li {
-    color: #fff;
-    padding: 8px 0;
+.content a {
+    margin: 35px;
+    display: block;
 }
 
 .ou {
-    line-height: 35px;
+    margin-bottom: 17px;
     background-image: url(../img/img2.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 
-/* ########## FORM INPUT ######### */
+/* ######### FORM ########## */
 
-input {
+form input {
+    line-height: 36px;
+}
+
+.reg-form input {
     color: #fff;
     width: 260px;
-    padding-left: 15px;
-    line-height: 35px;
+    margin: 7px auto;
+    padding-left: 16px;
     font-family: "Helvetica Neue Regular", Arial, sans-serif;
     background-color: #0f0f0f;
     border: none;
@@ -128,36 +138,41 @@ input:hover {
     border-bottom: 1px solid #689bcc;
 }
 
-/* ########## CHEKBOX ########## */
+/* ######### CHEKBOX ########## */
 
 .chekbox {
-    width: 500px;
+    margin: 10px 45px 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .chekbox input {
-    width: auto;
-    margin: 10px;
+    margin-right: 10px;
+}
+
+label {
+    cursor: pointer;
 }
 
 .chekbox input:hover {
     background: transparent;
     box-shadow: none;
     border: none;
+    cursor: pointer;
 }
 
-/* ########## SUBMIT ########## */
+/*########## SUBMIT ########## */
 
 .submit {
-    width: auto;
+    color: #fff;
+    margin: 12px auto;
     padding: 0 15px;
     font-weight: bold;
     background: linear-gradient(#67c6e6, #2e7ac4);
     border-radius: 2px;
     box-shadow: 0 0 1px 1px #52a0da;
-    border-bottom: none;
+    border: none;
     cursor: pointer;
 }
 
@@ -167,9 +182,8 @@ input:hover {
     box-shadow: 0 0 1px 1px #52a0da;
 }
 
-
-.footer {
+footer {
     width: 300px;
-    margin: 0 auto;
+    margin: 10px auto;
     font-size: 11px;
 }
